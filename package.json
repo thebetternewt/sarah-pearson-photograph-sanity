@@ -8,11 +8,13 @@
   "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",
+    "deploy": "sanity deploy",
+    "build": "sanity build",
+    "now-start": "node server.js",
+    "upgrade": "sanity upgrade",
     "test": "sanity check"
   },
-  "keywords": [
-    "sanity"
-  ],
+  "keywords": ["sanity"],
   "dependencies": {
     "@sanity/base": "^0.140.35",
     "@sanity/components": "^0.140.35",
@@ -26,5 +28,7 @@
     "react-dom": "^16.2",
     "react-icons": "^3.7.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@sanity/cli": "0.140.36"
+  }
 }

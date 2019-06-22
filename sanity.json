@@ -4,8 +4,8 @@
     "name": "Sarah Pearson Photography"
   },
   "api": {
-    "projectId": "PROJECT_ID",
-    "dataset": "DATASET"
+    "projectId": "gnulaip7",
+    "dataset": "staging"
   },
   "plugins": [
     "@sanity/base",
