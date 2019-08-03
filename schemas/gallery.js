@@ -1,8 +1,8 @@
-import { FaRegImages } from 'react-icons/fa'
+import { FaRegImages } from 'react-icons/fa';
 
 export default {
   name: 'gallery',
-  title: 'Gallery',
+  title: 'Galleries',
   type: 'document',
   icon: FaRegImages,
   fields: [
@@ -20,6 +20,7 @@ export default {
       name: 'featuredImage',
       title: 'Featured Image',
       type: 'accessibleImage',
+      validation: Rule => Rule.required(),
     },
     {
       name: 'images',
@@ -32,4 +33,10 @@ export default {
       ],
     },
   ],
-}
+  preview: {
+    select: {
+      title: 'title',
+      media: 'featuredImage', // Use the featuredImage image field as thumbnail
+    },
+  },
+};

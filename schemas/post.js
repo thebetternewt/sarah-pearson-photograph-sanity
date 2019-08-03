@@ -1,8 +1,9 @@
-import { FaRegFileAlt } from 'react-icons/fa'
+import { FaRegFileAlt } from 'react-icons/fa';
+import { categories } from './constants';
 
 export default {
   name: 'post',
-  title: 'Post',
+  title: 'Posts',
   type: 'document',
   icon: FaRegFileAlt,
   fields: [
@@ -31,8 +32,10 @@ export default {
     {
       name: 'category',
       title: 'Category',
-      type: 'reference',
-      to: { type: 'category' },
+      type: 'string',
+      options: {
+        list: categories,
+      },
     },
     {
       name: 'publishedAt',
@@ -50,25 +53,12 @@ export default {
       type: 'reference',
       to: { type: 'gallery' },
     },
-    {
-      name: 'tags',
-      title: 'Tags',
-      type: 'array',
-      of: [{ type: 'tag' }],
-    },
   ],
 
   preview: {
     select: {
       title: 'title',
-      author: 'author.name',
       media: 'mainImage',
     },
-    prepare(selection) {
-      const { author } = selection
-      return Object.assign({}, selection, {
-        subtitle: author && `by ${author}`,
-      })
-    },
   },
-}
+};

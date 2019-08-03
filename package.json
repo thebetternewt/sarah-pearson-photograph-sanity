@@ -14,14 +14,17 @@
     "upgrade": "sanity upgrade",
     "test": "sanity check"
   },
-  "keywords": ["sanity"],
+  "keywords": [
+    "sanity"
+  ],
   "dependencies": {
-    "@sanity/base": "^0.140.35",
-    "@sanity/components": "^0.140.35",
-    "@sanity/core": "^0.140.34",
-    "@sanity/default-layout": "^0.140.35",
-    "@sanity/default-login": "^0.140.34",
-    "@sanity/desk-tool": "^0.140.35",
+    "@sanity/base": "^0.141.6",
+    "@sanity/components": "^0.141.6",
+    "@sanity/core": "^0.141.6",
+    "@sanity/default-layout": "^0.141.6",
+    "@sanity/default-login": "^0.141.5",
+    "@sanity/desk-tool": "^0.141.6",
+    "@sanity/vision": "^0.141.6",
     "dotenv": "^8.0.0",
     "prop-types": "^15.6",
     "react": "^16.2",
@@ -29,6 +32,6 @@
     "react-icons": "^3.7.0"
   },
   "devDependencies": {
-    "@sanity/cli": "0.140.36"
+    "@sanity/cli": "^0.141.6"
   }
 }
