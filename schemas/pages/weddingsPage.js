@@ -6,16 +6,16 @@ export default {
   type: 'document',
   icon: FaChevronRight,
   fields: [
-    {
-      name: 'title',
-      title: 'Title',
-      type: 'string',
-    },
-    {
-      name: 'mainImage',
-      title: 'Main Image',
-      type: 'accessibleImage',
-    },
+    // {
+    //   name: 'title',
+    //   title: 'Title',
+    //   type: 'string',
+    // },
+    // {
+    //   name: 'mainImage',
+    //   title: 'Main Image',
+    //   type: 'accessibleImage',
+    // },
     {
       name: 'featuredPostOne',
       title: 'Featured Post 1',

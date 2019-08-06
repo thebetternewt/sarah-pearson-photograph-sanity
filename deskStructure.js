@@ -40,6 +40,7 @@ export default () =>
             .id('weddingsPage')
             .schemaType('weddingsPage')
             .documentId('weddingsPage')
+            .title('Edit Weddings Page')
         ),
       S.listItem()
         .icon(FaChevronRight)
@@ -49,6 +50,7 @@ export default () =>
             .id('maternityPage')
             .schemaType('maternityPage')
             .documentId('maternityPage')
+            .title('Edit Maternity Page')
         ),
       S.listItem()
         .icon(FaChevronRight)
@@ -58,6 +60,7 @@ export default () =>
             .id('birthStoriesPage')
             .schemaType('birthStoriesPage')
             .documentId('birthStoriesPage')
+            .title('Edit Birth Stories Page')
         ),
       S.listItem()
         .icon(FaChevronRight)
@@ -67,6 +70,7 @@ export default () =>
             .id('newbornPage')
             .schemaType('newbornPage')
             .documentId('newbornPage')
+            .title('Edit Newborn Page')
         ),
       S.listItem()
         .icon(FaChevronRight)
@@ -76,6 +80,7 @@ export default () =>
             .id('familiesPage')
             .schemaType('familiesPage')
             .documentId('familiesPage')
+            .title('Edit Families Page')
         ),
       S.listItem()
         .icon(FaChevronRight)
@@ -85,5 +90,6 @@ export default () =>
             .id('seniorsPage')
             .schemaType('seniorsPage')
             .documentId('seniorsPage')
+            .title('Edit Seniors Page')
         ),
     ]);
